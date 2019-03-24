@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('todos', function() {
+    this.route('new');
+    this.route('edit', {path: '/edit/:todo_id'});
+  });
 });
 
 export default Router;
