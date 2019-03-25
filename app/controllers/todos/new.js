@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import moment from 'moment';
 
 export default Controller.extend({
   actions: {
@@ -9,7 +10,7 @@ export default Controller.extend({
 
       // Create New Todo
       const newTodo = this.store.createRecord('todo', {
-        date: new Date(date),
+        date: moment.utc(date),
         title,
         body
       });
