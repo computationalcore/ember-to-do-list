@@ -10,7 +10,7 @@ export default Controller.extend({
 
       // Create New Todo
       const newTodo = this.store.createRecord('todo', {
-        date: moment.utc(date),
+        date: moment(date),
         title,
         body
       });

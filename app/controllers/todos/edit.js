@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import moment from 'moment';
 
 export default Controller.extend({
   actions: {
@@ -12,7 +13,7 @@ export default Controller.extend({
       this.store.findRecord('todo', id).then(function(todo) {
         todo.set('title', title);
         todo.set('body', body);
-        todo.set('date', new Date(date));
+        todo.set('date', moment(date));
 
         //Save to Firebase
         todo.save();
@@ -29,7 +30,6 @@ export default Controller.extend({
         todo.save();
         self.transitionToRoute('todos');
       });
-
     }
   }
 });

@@ -3,9 +3,7 @@
     {{#link-to "todos.new" class="btn btn-success"}}
       Create Todo
     {{/link-to}}
-
-    <hr />
-
+    <hr>
     {{outlet}}
   </div>
   <div class="col-md-8">
@@ -13,30 +11,31 @@
       <div class="col-md-12">
         <form class="form-inline">
           <div class="form-group">
-            {{input type="text" class="form-control" value=filter id="search"
-              placeholder="Search todos..."}}
+            {{input type="text" class="form-control" value=filter id="search" placeholder="Search todos..."}}
           </div>
           <button type="submit" class="btn btn-default">Search</button>
         </form>
       </div>
     </div>
-    < hr /><br />
+    <hr><br>
     {{#if filter}}
       {{#each this.filteredTodos as |todo|}}
         <div class="card card-body bg-light">
-          <h4>{{#link-to "todos.edit" todo.id}}{{todo.title}}{{/link-to}}
+          <h4>
+            {{#link-to "todos.edit" todo.id}}{{todo.title}}{{/link-to}}
             <span class="badge badge-primary float-right">{{format-date todo.date}}</span>
           </h4>
-          {{todo.body}}
+          {{format-markdown todo.body}}
         </div>
       {{/each}}
     {{else}}
       {{#each this.sortedTodos as |todo|}}
         <div class="card card-body bg-light">
-          <h4>{{#link-to "todos.edit" todo.id}}{{todo.title}}{{/link-to}}
+          <h4>
+            {{#link-to "todos.edit" todo.id}}{{todo.title}}{{/link-to}}
             <span class="badge badge-primary float-right">{{format-date todo.date}}</span>
           </h4>
-          {{todo.body}}
+          {{format-markdown todo.body}}
         </div>
       {{/each}}
     {{/if}}

@@ -11,7 +11,7 @@
     <label>Body</label>
     {{textarea class="form-control" value=this.model.body placeholder="Todo body..."}}
   </div>
-  <button {{action "editTodo" model.id}} class="btn btn-primary">Submit</button>
+  <button {{action "editTodo" model.id}} class="btn btn-primary">Save</button>
   {{#link-to "todos" class="btn btn-default"}}Close{{/link-to}}
-  <button {{action 'deleteTodo' model.id}} class='btn btn-danger float-right'>Delete</button>
+  <button {{action "deleteTodo" model.id}} class="btn btn-danger float-right">Delete</button>
 </form>
