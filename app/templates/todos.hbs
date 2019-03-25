@@ -24,14 +24,18 @@
     {{#if filter}}
       {{#each this.filteredTodos as |todo|}}
         <div class="card card-body bg-light">
-          <h4>{{todo.title}} <span class="badge badge-primary float-right">{{format-date todo.date}}</span></h4>
+          <h4>{{#link-to "todos.edit" todo.id}}{{todo.title}}{{/link-to}}
+            <span class="badge badge-primary float-right">{{format-date todo.date}}</span>
+          </h4>
           {{todo.body}}
         </div>
       {{/each}}
     {{else}}
       {{#each this.sortedTodos as |todo|}}
         <div class="card card-body bg-light">
-          <h4>{{todo.title}} <span class="badge badge-primary float-right">{{format-date todo.date}}</span></h4>
+          <h4>{{#link-to "todos.edit" todo.id}}{{todo.title}}{{/link-to}}
+            <span class="badge badge-primary float-right">{{format-date todo.date}}</span>
+          </h4>
           {{todo.body}}
         </div>
       {{/each}}
