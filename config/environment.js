@@ -7,10 +7,10 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-      apiKey: 'AIzaSyDVgCptQI9pHnEy7noxdTEq1nm1ebWBR5k',
-      authDomain: 'ember-to-do-list.firebaseapp.com',
-      databaseURL: 'https://ember-to-do-list.firebaseio.com',
-      storageBucket: 'ember-to-do-list.appspot.com',
+      apiKey: "YOUR-API-KEY",
+      authDomain: "YOUR-FIREBASE-APP.firebaseapp.com",
+      databaseURL: "https://YOUR-FIREBASE-APP.firebaseio.com",
+      storageBucket: "YOUR-FIREBASE-APP.appspot.com"
     },
     // if using ember-cli-content-security-policy
     contentSecurityPolicy: {

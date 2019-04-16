@@ -2,10 +2,26 @@
   "name": "ember-to-do-list",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for ember-to-do-list goes here",
-  "repository": "",
-  "license": "MIT",
-  "author": "",
+  "description": "A simple To-Do List EmberJS application using Firebase for persistence",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/computationalcore/ember-to-do-list"
+  },
+  "keywords": [
+    "ember to-do",
+    "ember todo",
+    "ember todo list",
+    "to-do list",
+    "EmberJS",
+    "udemy",
+    "firebase"
+  ],
+  "author": "Vin Busquet",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/computationalcore/ember-to-do-list/issues"
+  },
+  "homepage": "https://github.com/computationalcore/ember-to-do-list",
   "directories": {
     "doc": "doc",
     "test": "tests"

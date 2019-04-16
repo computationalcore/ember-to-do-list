@@ -5,10 +5,6 @@ It is my implementation of the last in-class project on the [Build Web Apps Usin
 
 ![](https://github.com/computationalcore/ember-to-do-list/raw/assets/ember-to-do.png)
 
-## Demo
-
-[computationalcore.github.io/ember-to-do-list](https://computationalcore.github.io/ember-to-do-list)
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
